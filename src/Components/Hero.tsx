@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="text-center m-4 md:m-10">
+    <div className="text-center md:mt-20 m-4 md:m-10">
       <h1 className="text-3xl font-black font-jakarta text-primary px-10 lg:px-80 leading-10 tracking-normal">
         <span className="bg-gradient-to-r from-secondary to-accent text-transparent bg-clip-text">
           Embark on

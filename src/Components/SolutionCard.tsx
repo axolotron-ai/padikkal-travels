@@ -10,7 +10,7 @@ function SolutionCard({
   seat: string;
 }) {
   return (
-    <div className="group relative w-full h-64 rounded-xl overflow-hidden">
+    <div className="group relative w-full h-64 rounded-xl overflow-hidden drop-shadow-lg">
       <img
         src={image}
         alt={name}

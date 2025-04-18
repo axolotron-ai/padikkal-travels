@@ -48,7 +48,7 @@ export function FAQ() {
             <AccordionTrigger className="text-lg text-[#0A2538] hover:none">
               {faq.title}
             </AccordionTrigger>
-            <AccordionContent className="text-[#95A5A6] text-lg">
+            <AccordionContent className="text-[#95A5A6] text-lg text-justify">
               {faq.description}
             </AccordionContent>
           </AccordionItem>

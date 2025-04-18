@@ -19,12 +19,12 @@ const data2 = [
 function HeroCards() {
   const leftOffsets = [
     "mt-0 z-30",
-    "mt-10 md:mt-16 -ml-6 md:-ml-10 z-20",
-    "mt-20 md:mt-32 -ml-12 md:-ml-20 z-10",
+    "mt-10 md:mt-16 -ml-6 md:-ml-32 z-20",
+    "mt-24 md:mt-32 -ml-12 md:-ml-32 z-10",
   ];
   const rightOffsets = [
-    "mt-20 md:mt-32 -mr-12 md:-mr-20 z-10",
-    "mt-10 md:mt-16 -mr-6 md:-mr-10 z-20",
+    "mt-24 md:mt-32 -mr-12 md:-mr-32 z-10",
+    "mt-10 md:mt-16 -mr-6 md:-mr-32 z-20",
     "mt-0 z-30",
   ];
 
@@ -43,7 +43,7 @@ function HeroCards() {
 
   return (
     <div>
-      <div className=" flex md:gap-x-6 justify-evenly items-start">
+      <div className=" flex md:gap-x-20 justify-evenly items-start">
         {/* Left side cards */}
         {data1.map((item, index) => (
           <motion.div
@@ -74,12 +74,12 @@ function HeroCards() {
       </div>
       {/* Button */}
       <motion.div
-        className="mx-auto text-center w-fit mt-4 flex items-center"
+        className="mx-auto text-center w-fit flex items-center"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.6 }}
       >
-        <button className="bg-gradient-to-r from-secondary to-accent text-white h-fit px-4 py-2 rounded-md font-poppins font-medium">
+        <button className="bg-gradient-to-r from-secondary to-accent text-white h-fit px-4 py-2 rounded-md font-poppins font-medium mt-4 md:-mt-32">
           Book now
         </button>
       </motion.div>

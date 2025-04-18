@@ -11,7 +11,7 @@ function FeatureCard({
   paragraph: string;
 }) {
   return (
-    <div className="bg-gradient-to-r from-feature-primary to-feature-secondar w-fit py-8 rounded-md px-10 hover:scale-110 cursor-pointer transition-all">
+    <div className="bg-gradient-to-b drop-shadow-lg from-feature-primary to-feature-secondar w-fit py-8 rounded-md px-10 hover:scale-110 cursor-pointer transition-all">
       <div className="flex items-center justify-between">
         <h1 className="text-lg">{name}</h1>
         <Image src={icon} width={20} height={20} alt={name} />
