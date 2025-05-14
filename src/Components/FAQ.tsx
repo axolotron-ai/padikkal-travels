@@ -30,7 +30,7 @@ const faqdata = [
 
 export function FAQ() {
   return (
-    <div className="mt-40 font-poppins">
+    <div className="mt-40 font-poppins" id="faq">
       <h1 className="text-3xl font-semibold text-center text-secondary">
         Your Questions Answered
       </h1>

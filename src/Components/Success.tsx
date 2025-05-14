@@ -22,7 +22,7 @@ const TestimonialCard = ({
     <div className="min-w-[300px] bg-white rounded-lg p-4 mx-4">
       {/* Video element */}
       <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
-        <video src={video} controls className="w-full h-full object-cover" />
+        <video autoPlay src={video} controls className="w-full h-full object-cover" />
       </div>
 
       {/* Profile section */}
@@ -60,31 +60,24 @@ const TestimonialCard = ({
 // Sample testimonial data
 const testimonials = [
   {
-    video: "/testimonials/video1.mp4",
-    name: "Jim Carry",
-    place: "Place",
-    image: "/testimonials/jim.jpg",
-    rating: 4,
-  },
-  {
-    video: "/testimonials/video2.mp4",
+    video: "/videos/interview_1.mp4",
     name: "Sarah Johnson",
     place: "City",
-    image: "/testimonials/sarah.jpg",
+    image: "/profile.jpg",
     rating: 5,
   },
   {
-    video: "/testimonials/video2.mp4",
+    video: "/videos/interview_2.mp4",
     name: "Sarah Johnson",
     place: "City",
-    image: "/testimonials/sarah.jpg",
+    image: "/profile.jpg",
     rating: 5,
   },
   {
-    video: "/testimonials/video2.mp4",
+    video: "/videos/interview_3.mp4",
     name: "Sarah Johnson",
     place: "City",
-    image: "/testimonials/sarah.jpg",
+    image: "/profile.jpg",
     rating: 5,
   },
 ];
@@ -107,7 +100,7 @@ function Testimonials() {
   };
 
   return (
-    <div className="w-full py-12 bg-gray-50 font-poppins">
+    <div className="w-full py-12 bg-gray-50 font-poppins" id="testimonials">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-semibold text-center text-secondary mb-12">
           What Our Customers Say

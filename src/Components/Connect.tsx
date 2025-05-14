@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Connect() {
   return (
-    <div className="font-poppins mt-20 max-w-7xl mx-auto px-4">
+    <div className="font-poppins mt-20 max-w-7xl mx-auto px-4" id="connect">
       <h1 className="text-4xl font-semibold text-center text-secondary mb-12">
         Let's Connect
       </h1>

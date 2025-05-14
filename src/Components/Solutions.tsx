@@ -41,8 +41,13 @@ function Solutions() {
         Solutions for you
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-10 mx-10 md:mx-20 mt-10">
-        {solutionsData.map((item) => (
-          <SolutionCard name={item.name} image={item.image} seat={item.seat} />
+        {solutionsData.map((item, index) => (
+          <SolutionCard
+            name={item.name}
+            image={item.image}
+            seat={item.seat}
+            key={index}
+          />
         ))}
       </div>
     </div>

@@ -45,7 +45,7 @@ const Navbar = () => {
             {/* Book Now Button */}
             <div>
               <Link
-                href="#book"
+                href="#connect"
                 className="bg-gradient-to-r from-secondary to-accent text-white font-poppins font-medium px-6 py-2 rounded-md hover:opacity-90 transition-opacity duration-200"
               >
                 Book Now
