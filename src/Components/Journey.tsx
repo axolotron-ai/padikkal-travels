@@ -8,7 +8,7 @@ function Journey() {
         Our Journey
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-10 mx-10 md:mx-20">
-        <Image
+        <img
           src={"/buses/journey_bus.png"}
           alt="bus"
           width={100}

@@ -4,7 +4,7 @@ import Image from "next/image";
 function AboutHeader() {
   return (
     <div className="relative">
-      <Image
+      <img
         src="/about_bus.png"
         alt="about-header"
         width={100}
