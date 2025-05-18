@@ -3,6 +3,7 @@ import React from "react";
 import HeroCard from "./HeroCard";
 import { motion } from "framer-motion";
 import { div } from "framer-motion/client";
+import Link from "next/link";
 
 const data1 = [
   { id: 1, name: "Bangalore", image: "/places/bangalore.png" },
@@ -79,9 +80,12 @@ function HeroCards() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.6 }}
       >
-        <button className="bg-gradient-to-r from-secondary to-accent text-white h-fit px-4 py-2 rounded-md font-poppins font-medium mt-4 md:-mt-32">
+        <Link
+          href={"#connect"}
+          className="bg-gradient-to-r from-secondary to-accent text-white h-fit px-4 py-2 rounded-md font-poppins font-medium mt-4 md:-mt-32"
+        >
           Book now
-        </button>
+        </Link>
       </motion.div>
     </div>
   );

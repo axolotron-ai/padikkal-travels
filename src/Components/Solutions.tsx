@@ -36,7 +36,7 @@ const solutionsData = [
 
 function Solutions() {
   return (
-    <div className="font-poppins mt-20">
+    <div className="font-poppins mt-20" id="service">
       <h1 className="text-3xl font-semibold text-center text-secondary">
         Solutions for you
       </h1>

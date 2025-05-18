@@ -2,11 +2,13 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import VideoPlayer from "./VideoPlayer";
 
 interface TestimonialCardProps {
   video: string;
   name: string;
   place: string;
+  thumbnail: string;
   image: string;
   rating: number;
 }
@@ -14,6 +16,7 @@ interface TestimonialCardProps {
 const TestimonialCard = ({
   video,
   name,
+  thumbnail,
   place,
   image,
   rating,
@@ -22,7 +25,14 @@ const TestimonialCard = ({
     <div className="min-w-[300px] bg-white rounded-lg p-4 mx-4">
       {/* Video element */}
       <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
-        <video autoPlay src={video} controls className="w-full h-full object-cover" />
+        <VideoPlayer
+          videoSrc={video}
+          thumbnailSrc={thumbnail}
+          title={name}
+          subtitle={place}
+          rating={5}
+          posterImage={thumbnail}
+        />
       </div>
 
       {/* Profile section */}
@@ -61,23 +71,26 @@ const TestimonialCard = ({
 const testimonials = [
   {
     video: "/videos/interview_1.mp4",
-    name: "Sarah Johnson",
-    place: "City",
-    image: "/profile.jpg",
+    thumbnail: "/testimonials/tm1.png",
+    name: "Venkatesh",
+    place: "Burma automobiles",
+    image: "/testimonials/tl1.png",
     rating: 5,
   },
   {
     video: "/videos/interview_2.mp4",
-    name: "Sarah Johnson",
-    place: "City",
-    image: "/profile.jpg",
+    thumbnail: "/testimonials/tm2.png",
+    name: "Chettan",
+    place: "Offspot",
+    image: "/testimonials/tl2.png",
     rating: 5,
   },
   {
     video: "/videos/interview_3.mp4",
-    name: "Sarah Johnson",
-    place: "City",
-    image: "/profile.jpg",
+    thumbnail: "/testimonials/tm3.png",
+    name: "Saraswathi",
+    place: "Padikkal travels",
+    image: "/testimonials/tl3.png",
     rating: 5,
   },
 ];

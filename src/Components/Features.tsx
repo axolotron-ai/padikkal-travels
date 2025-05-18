@@ -41,7 +41,7 @@ const featureData = [
 ];
 function Features() {
   return (
-    <div className="font-poppins mt-20">
+    <div className="font-poppins mt-20" id="benefit">
       <h1 className="font-semibold text-3xl text-center text-secondary">
         Experience the Difference
       </h1>
