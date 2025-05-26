@@ -42,6 +42,14 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
+            <div>
+              <Link
+                href="https://www.padikkaltravels.com/"
+                className="bg-white text-black font-poppins font-medium px-6 py-2 rounded-md hover:opacity-90 transition-opacity duration-200"
+              >
+                School Travels
+              </Link>
+            </div>
             {/* Book Now Button */}
             <div>
               <Link
