@@ -1,7 +1,12 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
@@ -27,41 +32,65 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="flex items-center space-x-8">
-            {/* Navigation Links */}
-            <div className="hidden md:block">
-              <div className="flex items-center space-x-8">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.name}
-                    href={link.href}
-                    className="text-white hover:text-gray-200 font-poppins text-sm transition-colors duration-200"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div>
+          {/* Desktop Nav Links */}
+          <div className="hidden md:flex items-center space-x-6">
+            {navLinks.map((link) => (
               <Link
-                href="https://www.padikkaltravels.com/"
-                className="bg-white text-black font-poppins font-medium px-6 py-2 rounded-md hover:opacity-90 transition-opacity duration-200"
+                key={link.name}
+                href={link.href}
+                className="text-white hover:text-gray-200 font-poppins text-sm transition-colors duration-200"
               >
-                School Travels
+                {link.name}
               </Link>
-            </div>
-            {/* Book Now Button */}
-            <div>
-              <Link
-                href="#connect"
-                className="bg-gradient-to-r from-secondary to-accent text-white font-poppins font-medium px-6 py-2 rounded-md hover:opacity-90 transition-opacity duration-200"
-              >
-                Book Now
-              </Link>
+            ))}
+            <Link
+              href="https://www.padikkaltravels.com/"
+              className="bg-white text-black font-poppins font-medium px-4 py-2 rounded-md hover:opacity-90 transition"
+            >
+              School Travels
+            </Link>
+          </div>
+
+          {/* Always-visible Book Now button */}
+          <div className="flex items-center space-x-4">
+            <Link
+              href="#connect"
+              className="bg-gradient-to-r from-secondary to-accent text-white font-poppins font-medium px-4 py-2 rounded-md hover:opacity-90 transition"
+            >
+              Book Now
+            </Link>
+
+            {/* Mobile menu toggle */}
+            <div className="md:hidden">
+              <button onClick={() => setIsOpen(!isOpen)} className="text-white">
+                {isOpen ? <X size={28} /> : <Menu size={28} />}
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-primary px-4 pt-4 pb-6 space-y-4">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className="block text-white hover:text-gray-200 font-poppins text-sm"
+            >
+              {link.name}
+            </Link>
+          ))}
+          <Link
+            href="https://www.padikkaltravels.com/"
+            className="block bg-white text-black font-poppins font-medium px-4 py-2 rounded-md hover:opacity-90 transition"
+          >
+            School Travels
+          </Link>
+        </div>
+      )}
     </nav>
   );
 };

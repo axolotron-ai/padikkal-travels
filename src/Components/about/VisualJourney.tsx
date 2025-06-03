@@ -38,48 +38,48 @@ function VisualJourney() {
   }, []);
 
   return (
-    <div className="mt-20 mx-40">
+    <div className="mt-20 md:mx-40 mx-10">
       <h1 className="text-secondary font-bold text-3xl mb-10">
         Our Visual Journey
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
         <Image
-          src="/about/visual_journey.png"
+          src="/about/1.jpg"
           alt="journey"
           width={100}
           height={100}
           className="w-[80%] h-[80%] object-cover rounded-lg"
         />
         <Image
-          src="/about/visual_journey.png"
+          src="/about/2.jpg"
           alt="journey"
           width={100}
           height={100}
           className="w-[80%] h-[80%] object-cover rounded-lg"
         />
         <Image
-          src="/about/visual_journey.png"
+          src="/about/3.jpg"
           alt="journey"
           width={100}
           height={100}
           className="w-[80%] h-[80%] object-cover rounded-lg"
         />
         <Image
-          src="/about/visual_journey.png"
+          src="/about/4.jpg"
           alt="journey"
           width={100}
           height={100}
           className="w-[80%] h-[80%] object-cover rounded-lg"
         />
         <Image
-          src="/about/visual_journey.png"
+          src="/about/5.jpg"
           alt="journey"
           width={100}
           height={100}
           className="w-[80%] h-[80%] object-cover rounded-lg"
         />
         <Image
-          src="/about/visual_journey.png"
+          src="/about/6.jpg"
           alt="journey"
           width={100}
           height={100}
@@ -129,7 +129,7 @@ function VisualJourney() {
         }
       `}</style>
 
-      <div className="my-20 mx-40 font-poppins flex flex-col items-center">
+      <div className="my-20 md:mx-40 font-poppins flex flex-col items-center">
         <h1 className="text-[#0A2538] font-medium text-xl text-center">
           Ready to embark on a journey with a great comfort for you?
         </h1>

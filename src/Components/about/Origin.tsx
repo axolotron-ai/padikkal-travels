@@ -2,7 +2,7 @@ import React from 'react'
 
 function Origin() {
   return (
-    <div className='mt-20 font-poppins mx-40'>
+    <div className='mt-20 font-poppins mx-10 md:mx-40'>
       <h1 className='text-secondary font-medium text-3xl'>Our Origin: How we started</h1>
       <p className="text-[#A9A9A9] mt-4">
         Padikkal Travels Private Linited is a renowned brand in the bus

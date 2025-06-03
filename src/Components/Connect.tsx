@@ -28,7 +28,7 @@ function Connect() {
               Are you looking for a safe and enjoyable transport? Reach out to
               us.
             </p>
-            <div className="flex gap-x-4 md:gap-x-8">
+            <div className="flex md:flex-row flex-col gap-y-8 gap-x-4 md:gap-x-8">
               <div>
                 <h3 className="font-medium text-[#0A2538] mb-2">
                   Phone number
