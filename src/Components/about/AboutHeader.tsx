@@ -4,7 +4,7 @@ function AboutHeader() {
   return (
     <div className="relative">
       <img
-        src="/about_bus.png"
+        src="/buses/journey_bus.jpg"
         alt="about-header"
         className="object-cover w-full h-[60vh] z-0"
       />
