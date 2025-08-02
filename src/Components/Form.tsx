@@ -41,7 +41,7 @@ function Form() {
         setMessage({ text: "Message sent successfully!", type: "success" });
         // Clear form
         setFormData({ name: "", email: "", address: "" });
-      } else {
+      } else { 
         setMessage({
           text: data.error || "Failed to send message",
           type: "error",
