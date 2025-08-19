@@ -85,14 +85,6 @@ const testimonials = [
     image: "/testimonials/tl2.png",
     rating: 5,
   },
-  {
-    video: "/videos/interview_3.mp4",
-    thumbnail: "/testimonials/tm3.png",
-    name: "Saraswathi",
-    place: "Padikkal travels",
-    image: "/testimonials/tl3.png",
-    rating: 5,
-  },
 ];
 
 function Testimonials() {
