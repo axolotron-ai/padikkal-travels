@@ -84,7 +84,7 @@ const Footer = () => {
           <h3 className="text-lg font-medium mb-4">Socials</h3>
           <div className="space-y-2">
             <Link
-              href="https://instagram.com"
+              href="https://instagram.com/padikkaltravels"
               className="flex items-center gap-2 hover:text-gray-300"
             >
               <Image
@@ -96,7 +96,7 @@ const Footer = () => {
               <span>Instagram</span>
             </Link>
             <Link
-              href="https://facebook.com"
+              href="https://facebook.com/padikkaltravels"
               className="flex items-center gap-2 hover:text-gray-300"
             >
               <Image
@@ -108,7 +108,7 @@ const Footer = () => {
               <span>Facebook</span>
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/padikkaltravels"
               className="flex items-center gap-2 hover:text-gray-300"
             >
               <Image
