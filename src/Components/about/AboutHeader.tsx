@@ -9,7 +9,7 @@ function AboutHeader() {
         className="object-cover w-full h-[60vh] z-0"
       />
       <div className="absolute inset-0 flex flex-col justify-start items-start px-4 sm:px-6 md:px-10 pt-10 md:pt-40 z-10">
-        <h1 className="text-[#0A2538] text-2xl sm:text-3xl md:text-4xl font-bold font-poppins max-w-[90%] md:max-w-[700px] leading-snug">
+        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold font-poppins max-w-[90%] md:max-w-[700px] leading-snug">
           Our <span className="text-secondary">passion for travel </span>
           drives us to{" "}
           <span className="text-secondary">create unforgettable</span>

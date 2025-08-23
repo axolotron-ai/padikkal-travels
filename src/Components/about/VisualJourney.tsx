@@ -87,10 +87,10 @@ function VisualJourney() {
         />
       </div>
 
-      <h2 className="text-secondary font-bold text-2xl mb-6">
+      {/* <h2 className="text-secondary font-bold text-2xl mb-6">
         Journey Through Videos
-      </h2>
-      <div
+      </h2> */}
+      {/* <div
         ref={videoContainerRef}
         className="relative w-full overflow-x-auto pb-8 hide-scrollbar"
         style={{
@@ -117,7 +117,7 @@ function VisualJourney() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <style jsx>{`
         .hide-scrollbar {
