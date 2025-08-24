@@ -17,7 +17,7 @@ function AboutHeader() {
         </h1>
       </div>
       <div className="absolute bg-white text-[#0A2538] font-poppins font-bold px-5 py-3 rounded-lg right-4 bottom-4 md:right-10">
-        <h1 className="text-sm sm:text-base">20 Years of Travelling</h1>
+        <h1 className="text-sm sm:text-base">20+ Years of Travelling</h1>
       </div>
     </div>
   );

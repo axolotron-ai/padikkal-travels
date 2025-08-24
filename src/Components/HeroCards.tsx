@@ -84,7 +84,7 @@ function HeroCards() {
           href={"#connect"}
           className="bg-gradient-to-r from-secondary to-accent text-white h-fit px-4 py-2 rounded-md font-poppins font-medium mt-4 md:-mt-32"
         >
-          Book now
+          Get Started
         </Link>
       </motion.div>
     </div>
