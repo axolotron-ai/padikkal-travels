@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import Navbar from "@/Components/Navbar";
-import Footer from "@/Components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,11 +24,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-   <html lang="en">
+    <html lang="en">
       <head>
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
@@ -52,10 +52,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {/* End Google Tag Manager */}
-
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );
