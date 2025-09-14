@@ -27,11 +27,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* Google Tag Manager */}
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -43,6 +38,12 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-KGJGLB8D');`,
           }}
         />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {/* Google Tag Manager */}
+
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KGJGLB8D"
